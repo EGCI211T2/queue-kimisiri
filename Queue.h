@@ -43,7 +43,7 @@ int Queue::dequeue(){
     --size;
     return val;
   }
-  cout<<"Empty queue"<<endl;
+  cout<<"Empty Queue"<<endl;
   return -1;
 }
 
