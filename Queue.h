@@ -25,7 +25,7 @@ void Queue::enqueue(int x){
   }
   ++size;
 
-  if (!headPtr && !tailPtr) {
+  if (!headPtr) {
     headPtr = new_node;
     tailPtr = new_node;
   } else {
