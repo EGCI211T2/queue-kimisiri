@@ -30,8 +30,7 @@ int NODE::get_value(){
 
 
 void NODE::set_next(NODE *t){
-   nextPtr=t;
-
+  nextPtr=t;
 }
 NODE::~NODE(){
 }

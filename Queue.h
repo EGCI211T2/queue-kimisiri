@@ -25,14 +25,13 @@ void Queue::enqueue(int x){
   }
   ++size;
 
-  if (!headPtr) {
+  if (!headPtr && !tailPtr) {
     headPtr = new_node;
     tailPtr = new_node;
   } else {
     tailPtr->set_next(new_node);
     tailPtr = new_node;
   }
-
 }
 
 int Queue::dequeue(){
@@ -51,6 +50,8 @@ int Queue::dequeue(){
 
 Queue::Queue(){
   size = 0;
+  headPtr = NULL;
+  tailPtr = NULL;
 }
 Queue::~Queue(){
   cout<<"Clearing queue"<<endl;
